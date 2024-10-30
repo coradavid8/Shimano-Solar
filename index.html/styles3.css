@@ -1,0 +1,410 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+input{
+    display: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+color: #101d42;}
+
+ h3 {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    width: 90%;
+color: #fbb44c;}
+    p{
+       font-size: 0.875rem;
+       color: #2b2922;
+       
+    }
+.container {
+    
+        max-width: 1200px;
+        min-width: 320px;
+        padding: 0.75rem;
+        
+        margin: auto;
+        
+        }
+nav{
+position: fixed;
+top: 0;
+ width: 100%;
+ background-color: #141e4c;
+ height: 80px;
+}
+
+nav .container{ display: flex;
+    justify-content: space-between;
+    align-items: center;}
+nav img {
+        width: auto;
+        height: 60px;}
+nav .logo-link {
+padding: 0;}
+nav .menu-icon {
+    color: #ffffff;
+    display: none;
+}
+.material-symbols-outlined{
+    margin-top: -5px;
+}
+
+nav input[type="checkbox"] {
+    display: none;
+}
+nav ul {
+    display: flex;
+}
+nav li {
+    position: relative;
+}
+nav a {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+
+    color:#ffffff;
+    padding:  1rem;;
+}
+
+nav .arrow-down-icon {
+    font-size:  1rem;;
+    position: absolute;
+}
+
+nav a:hover {
+    color: #fbb44c;
+}
+nav .submenu {
+    
+    
+    display: none;
+    position: absolute;
+    background-color: #141e4c;
+    
+
+}
+
+nav .about-us:hover .submenu {
+        display: block;}
+        
+        .welcome {
+ background-color:#dfedf5;
+  height: 50vh;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ }
+ footer {
+    background-color: #101d42;
+    height: 80px;
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-bottom: -20px;
+}
+
+ @media (max-width:768px) {
+    .welcome h1 {
+        font-size: 2rem;
+    }
+ }
+ .courses .container .grid {
+    padding: 1rem 0.5rem;
+ }
+ .courses .container .grid .main-paragraph {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+ }
+ .courses h2 {
+    padding-top: 1.75rem;
+    color: #141e4c;
+
+ }
+ 
+.courses h2, 
+.courses .main-paragraph {
+    text-align: center;
+}
+.courses h2,
+.courses .main-paragraph,
+.courses .courses-container {
+    margin-bottom: 1.75rem;
+}
+.courses .courses-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: center;
+
+}
+.courses .course-wrapper {
+    width: calc 100% / 3;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.courses .course {
+    width: 100%;
+    padding: 0.25rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.courses .presentation-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.75rem;
+}
+.courses h3 {
+    color: #101d42;
+}
+.courses .microsoft-logo {
+    width:80px;
+    height: auto;
+    vertical-align: middle;
+}
+.courses span,
+.courses .certification {
+    font-size: 1rem;
+    color: #666;
+}
+.courses .materyal-symbols-outlined {
+    vertical-align: middle;
+}
+.courses a {
+    font-size: 1rem;
+    text-align: center;
+
+    color: #ffffff;
+    background-color: #2bb686;
+    border: 1px solid #2bb686;
+    border-radius: 5px;
+    padding: 0.25rem;
+
+    width: 100px;
+}
+.courses h3,
+.courses .certification,
+.courses .details,
+.courses a {
+    margin-bottom: 1rem;
+
+}
+.courses .content {
+    padding: 0.5rem;
+}
+.courses .microsoft-logo,
+.courses .duration-month,
+.courses .duration-hours {
+    margin-left: 0.5rem;
+}
+
+.instruction {
+    background-color: #dfedf5;
+
+}
+.instruction h2 {
+    text-align: center;
+    color: #101d42;
+}
+.instruction ol {
+    font-size: large;
+}
+.instruction p {
+    color: #101d42;
+    font-size: large;
+}
+.instruction2 h2 {
+    text-align: center;
+    color: #101d42; 
+}
+.instruction2 p {
+    color: #101d42;
+    font-size: large;
+
+}
+.instruction2 ol {
+    font-size: large;
+}
+
+
+footer {
+    background-color: #101d42;
+}
+footer p {
+    font-size: 0.75rem;
+    text-align: center;
+
+    color: #eaeaea;
+    padding: 1rem;
+}
+.produse{
+    font-size: 25px;
+    text-align: center;
+}
+
+.slides img {
+    width: 200px; /* Asigură lățimea maximă permisă de container */
+    height: 250px; /* Setează o înălțime fixă pentru toate imaginile */
+    }
+    .slides {
+        display: flex;
+        justify-content: space-between; /* Adaugă spațiu între imagini */
+        gap: 10px; /* Setează un spațiu între imagini */
+    
+    }
+    
+    
+    .products-container {
+        
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 20px;
+    }
+    
+    .product {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        width: auto;
+        margin: 90px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease;
+       
+    }
+    
+    .product:hover {
+        transform: scale(1.05); /* Mărește ușor produsul la hover */
+       
+    }
+   
+    
+    .product img {
+        width: 100%;
+            width: 100%;
+            height: 200px;
+            object-fit: contain; /* Asigură că întreaga imagine se potrivește în container */
+            border-radius: 10px;
+            margin-bottom: 15px;
+            
+        }
+    
+    
+    h2 {
+        font-size: 18px;
+        color: #333;
+        margin-top: 10px;
+    }
+    
+    p {
+        color: #666;
+        font-size: 14px;
+    }
+@media (max-width: 768px) {
+    .slides {
+        flex-direction: column; /* Afișează imaginile în coloană */
+        align-items: center;    /* Centrează imaginile */
+    }
+
+    .slides img {
+        width: 100%;           /* Fiecare imagine va ocupa întreaga lățime a containerului */
+        height: auto;          /* Menține proporțiile imaginii */
+    }
+    nav img {
+        height: 45px;
+    }
+
+    nav .about-us:hover .submenu {
+        display: block;
+        position: absolute;
+    }
+   
+    
+    
+    nav ul {
+        display: none;
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
+
+    nav .arrow-down-icon {
+        display: none;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    
+
+    nav .menu-icon-container {
+        position: relative;
+    }
+
+    nav input[type="checkbox"] {
+        display: block;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        height: 100%;
+        width: 100%;
+
+        opacity: 0;
+
+        margin: 0;
+
+        
+        cursor: pointer;
+    }
+    
+
+   
+    nav input[type="checkbox"]:checked ~ ul {
+        display: block;
+        width: 100%;
+
+
+        position: fixed;
+       
+        top: calc(45px + 2 * 1rem);
+        left: 0;
+
+        background-color: #101d42;
+    }
+}
